@@ -1,0 +1,365 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Learn Automata</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link rel="manifest" href="site.webmanifest"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/gijgo.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slicknav.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+     <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">home</a></li>
+                                        <li><a class="active" href="#">Automata <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                 <li><a href="course_details.html">Introduction</a></li>
+                                                <li><a href="deterministic.html">Deterministic Finite Automaton</a></li>
+												<li><a href="non-deterministic.html">Non-Deterministic Finite Automaton</a></li>
+												<li><a href="terminologies.html">Terminologies</a></li>
+                                            </ul>
+                                        </li>
+					<li><a href="exercises.html">Examples</a></li>
+					<li><a href="about.html">About</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="log_chat_area d-flex align-items-center">
+                                <div class="live_chat_btn">
+                                    <a class="boxed_btn_orange" href="contact.html">
+                                        <i class="ti-email"></i>
+                                        <span>LearnAutomata2@gmail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-  d-lg-none"></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+	
+		<!-- bradcam_area_start -->
+		<div class="bradcam_area breadcam_bg overlay2">
+				<h3>Non-Deterministic Finite Automata</h3>
+			</div>
+			<!-- bradcam_area_end -->
+
+	<!-- Start Sample Area -->
+	<section class="sample-text-area" style="background-color: #f0f0f0;" >
+		<div class="container box_1170">
+			<h3 class="text-heading">Non-Deterministic Finite Automata - NDFA</h3>
+			<p class="sample-text" style="color:black; font-size: 20px; text-align:justify">
+				In NDFA, for a particular input symbol, the machine can move to any combination of the states in the machine. 
+				In other words, the exact state to which the machine moves cannot be determined. Hence, it is called <b>Non-deterministic Automaton</b>. 
+				As it has finite number of states, the machine is called <b>Non-deterministic Finite Machine</b> or <b>Non-deterministic Finite Automaton</b>.</p>
+			<br>
+			<div class="section-top-border">
+			<div class="row" align="center">
+				<div class="col-md-6">
+					<div class="single-defination" align="left">
+						<h4 class="mb-20">Formal Definition of an NDFA</h4>
+						<pre style="color:black; font-size: 18px; font-family:font-awesome;">An NDFA can be represented by a 5-tuple (Q, ∑, δ, q<sub  style="color:black;">0</sub>, F) where −
+  →Q is a finite set of states.
+  →∑ is a finite set of symbols called the alphabet.
+  →δ is the transition function where δ: Q × ∑ → 2<sup  style="color:black;">Q</sup>
+     (Here the power set of Q (2<sup  style="color:black;">Q</sup>) has been taken because 
+     in case of NDFA, from a state, transition can occur 
+     to any combination of Q states).
+  →q0 is the initial state from where any input is processed 
+    (q<sub>0</sub> ∈ Q).
+  →F is a set of final state/states of Q (F ⊆ Q).
+						</pre>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="single-defination" align="left">
+						<h4 class="mb-20">Graphical Representation of a DFA</h4>
+						<pre style="color:black; font-size: 18px; font-family:font-awesome;">A DFA is represented by digraphs called state diagram.
+  →The vertices represent the states.
+  →The arcs labeled with an input alphabet show the transitions.
+  →The initial state is denoted by an empty single incoming arc.
+  →The final state is indicated by double circles.
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+			<h4>Example:</h4>
+		    <pre style="color:black; font-size: 18px; font-family:font-awesome;"> Let a non-deterministic finite automaton be →
+  →Q = {a, b, c}
+  →∑ = {0, 1}
+  →q0 = {a}
+  →F = {c}
+			</pre>
+			<p style="font-size: 20px; color:black">The transition function δ as shown below:</p>
+			<center><img src="img/ndfatable.png" alt="" class="img-fluid"></center>
+			<br>
+			<p style="font-size: 20px; color:black">Its graphical representation would be as follows:</p>
+			<center><img src="img/ndfagraph.png" alt="" class="img-fluid"></center>
+			</p><br>
+            <center><a href='exercises.html' class="genric-btn primary-border circle">Click to Procede to Example</a></center>
+			<br><br>
+			<h4>DFA vs. NDFA</h4>
+			<p class="sample-text" style="color:black; font-size: 20px;">The following table lists the differences between DFA and NDFA.</p>
+			<center><img src="img/ndfavsdfa.png" alt="" class="img-fluid"></center>
+			
+			<div class="section-top-border">
+				<h3 class="mb-30">Acceptors, Classifiers, and Transducers</h3>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">Acceptor (Recognizer)</h4>
+							<p class="sample-text" style="color:black; font-size: 20px; text-align:justify">An automaton that computes a Boolean function is called an <b>acceptor</b>. 
+			All the states of an acceptor is either accepting or rejecting the inputs given to it.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">Classifier</h4>
+							<p class="sample-text" style="color:black; font-size: 20px; text-align:justify">A <b>classifier</b> has more than two final states and 
+							it gives a single output when it terminates.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">Transducer</h4>
+							<p class="sample-text" style="color:black; font-size: 20px; text-align:justify">An automaton that produces 
+								outputs based on current input and/or previous state is called a <b>transducer</b>. 
+								<br><br>Transducers can be of two types:
+								<br>&nbsp;&nbsp;→<b>Mealy Machine</b> − The output depends both on the current state and the current input.
+								<br>&nbsp;&nbsp;→<b>Moore Machine</b> − The output depends only on the current state.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>Acceptability by DFA and NDFA</h4>
+			<pre style="color:black; font-size: 18px; font-family:font-awesome;">
+A string is accepted by a DFA/NDFA iff the DFA/NDFA starting at the initial state ends in an accepting state (any of the final states) after reading the 
+string wholly.
+
+A string S is accepted by a DFA/NDFA (Q, ∑, δ, q<sub style="color:black;">0</sub>, F), iff
+    δ*(q<sub  style="color:black;">0</sub>, S) ∈ F
+
+The language L accepted by DFA/NDFA is
+    {S | S ∈ ∑* and δ*(q<sub  style="color:black;">0</sub>, S) ∈ F}
+
+A string S′ is not accepted by a DFA/NDFA (Q, ∑, δ, q<sub  style="color:black;">0</sub>, F), iff
+    δ*(q<sub  style="color:black;">0</sub>, S′) ∉ F
+
+The language L′ not accepted by DFA/NDFA (Complement of accepted language L) is
+    {S | S ∈ ∑* and δ*(q<sub  style="color:black;">0</sub>, S) ∉ F}
+			</pre>
+			<h4>Example</h4>
+			<p class="sample-text" style="color:black; font-size: 20px;">
+			Let us consider the DFA shown below. From the DFA, the acceptable strings can be derived.
+			</p>
+			<center><img src="img/acceptn_dfa.png" alt="" class="img-fluid"></center>
+			<p class="sample-text" style="color:black; font-size: 20px;">
+				Strings accepted by the above DFA: {0, 00, 11, 010, 101, ...........}<br>
+				Strings not accepted by the above DFA: {1, 011, 111, ........}</p>
+		</div>
+	</section>
+	<!-- End Sample Area -->
+	
+    <!-- footer -->
+    <footer class="footer footer_bg_1">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <p style="text-align:justify">
+                                If you are not willing to learn, no one can help you. 
+				If you are determined to learn, no one can stop you.
+				Come and learn from the best! Come and Learn Automata.
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/groups/automata/">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/hashtag/automata?lang=en">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/explore/tags/automata/?hl=en">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=fp0RKpQHBVw">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Automata
+                            </h3>
+                            <ul>
+                                <li><a href="introduction.html">Introduction</a></li>
+                                <li><a href="deterministic.html">Deterministic FA</a></li>
+                                <li><a href="non-deterministic.html">Non-Deterministic FA</a></li>
+								<li><a href="terminologies.html">Terminologies</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Resources
+                            </h3>
+                            <ul>
+                                <li><a href="https://www.tutorialspoint.com/automata_theory/automata_theory_quick_guide.htm">Automata Theory - Quick Guide</a></li>
+                                <li><a href="https://www.tutorialspoint.com/automata_theory/automata_theory_useful_resources.htm">Useful Resources</a></li>
+                                <li><a href="https://www.tutorialspoint.com/automata_theory/automata_theory_discussion.htm">Discussion</a></li>
+                                <li><a href="about.html"> About</a></li>
+                                <li><a href="contact.html"> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Address
+                            </h3>
+                            <p>
+                                General Luna, corner Muralla St, <br>
+								Intramuros, Manila, 1002 Metro Manila <br>
+                                +63 956 780 4974 <br>
+                                LearnAutomata2@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+		
+	<!-- JS here -->
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/ajax-form.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/scrollIt.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/nice-select.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/gijgo.min.js"></script>
+
+	<!--contact js-->
+	<script src="js/contact.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/mail-script.js"></script>
+
+	<script src="js/main.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            disableDaysOfWeek: [0, 0],
+        //     icons: {
+        //      rightIcon: '<span class="fa fa-caret-down"></span>'
+        //  }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+
+        });
+        var timepicker = $('#timepicker').timepicker({
+         format: 'HH.MM'
+     });
+    </script>
+</body>
+</html>

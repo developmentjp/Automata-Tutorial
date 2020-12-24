@@ -1,0 +1,599 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Learn Automata</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+   <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="inactive" href="index.html">home</a></li>
+                                        <li><a class="active" href="#">Automata <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="introduction.html">Introduction</a></li>
+                                                <li><a href="deterministic.html">Deterministic Finite Automaton</a></li>
+                                                <li><a href="non-deterministic.html">Non-Deterministic Finite Automaton</a></li>
+                                                <li><a href="terminologies.html">Terminologies</a></li>
+                                            </ul>
+                                        </li>
+                                           <li><a href="exercises.html">Examples</a></li>
+                                           <li><a href="about.html">About</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="log_chat_area d-flex align-items-center">
+                                <div class="live_chat_btn">
+                                    <a class="boxed_btn_orange" href="contact.html"> <!-- insert link???--->
+                                        <i class="ti-email"></i>
+                                        <span>LearnAutomata2@gmail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-  d-lg-none"></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+     <!-- bradcam_area_start -->
+     <div class="courses_details_banner">
+         <div class="container">
+             <div class="row">
+                 <div class="col-xl-6">
+                     <div class="course_text">
+                            <h3>Are you interested in Computers Science? <br> In Machines?</h3>
+                            <div class="prise">
+                                <span class="active">Then this website is for you!</span>
+                            </div>
+                                <!--<div class="rating">
+                                <i class="flaticon-mark-as-favorite-star"></i>
+                                <i class="flaticon-mark-as-favorite-star"></i>
+                                <i class="flaticon-mark-as-favorite-star"></i>
+                                <i class="flaticon-mark-as-favorite-star"></i>
+                                <i class="flaticon-mark-as-favorite-star"></i>
+                                <span>(4.5)</span>
+                            </div> -->
+                            <div class="hours">
+                                <div class="video">
+                                     <div class="single_video">
+                                            <i class="fa fa-clock-o"></i> <span>Spend a liitle bit of your extra time to learn!</span>
+                                     </div>
+                                     <div class="single_video">
+                                            <i class="fa fa-play-circle-o"></i> <span>Learn Finite Automata through Practice and Patience!</span>
+                                     </div> 
+                                </div>
+                            </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <!-- bradcam_area_end -->
+
+    <div class="courses_details_info" style="background-color: #d8d8ed">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="single_courses">
+                        <h3>Automata Theory</h3>
+                        <p>Theory of automata is a theoretical branch of computer science and mathematical. 
+						   It is the study of abstract machines and the computation problems  that  can  be 
+						   solved using these machines. The abstract machine is called  the  automata.  The 
+						   main motivation behind developing the automata theory was to develop methods  to 
+						   describe and analyse the dynamic behaviour of discrete systems.<br>
+						   <br>This automaton consists of states and transitions. The State is  represented 
+						   by circles, and the Transitions is represented by arrows.<br>
+						   <br>Automata is the kind of machine which takes some string as  input  and  this 
+						   input goes through a finite number of states and may enter in the final state.</p>
+                    <h3 class="second_title">Questions Asked About Automata</h3>
+                    </div>
+                    <div class="outline_courses_info">
+                            <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo" style=" background-color: blue;">
+                                            <h5 class="mb-0" style="">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <i class="flaticon-question"></i> Automata – What is it?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style=" background-image: linear-gradient(blue, violet);">
+                                            <div class="card-body">
+                                                The term "Automata" is derived from the Greek word "αὐτόματα" which means "self-acting". 
+												An automaton (Automata in plural) is an abstract self-propelled computing device which 
+												follows a predetermined sequence of operations automatically.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne"style=" background-color: blue;" >
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    <i class="flaticon-question"></i>What is Automata used for?</span>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style=" background-image: linear-gradient(blue, violet);">
+                                            <div class="card-body">
+                                                Finite state automata are used a lot in the design of digital circuits (like the electronics in a hard drive) and embedded systems (such as burglar alarms or microwave ovens). Anything that has a few buttons on it and gets into different states when you press those buttons (such as alarm on/off, high/med/low power) is effectively a kind of FSA.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree"style=" background-color: blue;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <i class="flaticon-question"></i> What is the main objective of Automata?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion"style=" background-image: linear-gradient(blue, violet);">
+                                            <div class="card-body">
+                                                The major objective of automata theory is to develop methods by which computer scientists can describe and analyze the dynamic behavior of discrete systems, in which signals are sampled periodically. The behavior of these discrete systems is determined by the way that the system is constructed from storage and combinational elements. Characteristics of such machines include:
+                                                <br>--->Inputs: assumed to be sequences of symbols selected from a finite set I of input signals. Namely, set I is the set {x1, x,2, x3... xk} where k is the number of inputs.
+                                                <br>--->Outputs: sequences of symbols selected from a finite set Z. Namely, set Z is the set {y1, y2, y3 ... ym} where m is the number of outputs.
+                                                <br>--->States: finite set Q, whose definition depends on the type of automaton.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading_4"style=" background-color: blue;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                                    <i class="flaticon-question"></i> What is finite state Automata?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion" style=" background-image: linear-gradient(blue, violet);">
+                                            <div class="card-body">
+                                                A finite automaton (FA) is a simple idealized machine used to recognize patterns within input taken from some character set (or alphabet) C. The job of an FA is to accept or reject an input depending on whether the pattern defined by the FA occurs in the input.<br>
+                                                A finite automaton consists of:
+                                                <br>--->a finite set S of N states
+                                                <br>--->a special start state
+                                                <br>--->a set of final (or accepting) states
+                                                <br>--->a set of transitions T from one state to another, labeled with chars in C
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading_5"style=" background-color: blue;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                                    <i class="flaticon-question"></i> What are the types <span>of Finite State Automata?</span>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion" style=" background-image: linear-gradient(blue, violet);">
+                                            <div class="card-body">
+                                                There are two types of finite state machines (FSMs): deterministic finite state machines, often called deterministic finite automata, and non-deterministic finite state machines, often called non-deterministic finite automata.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5">
+                    <div class="courses_sidebar">
+                        <div class="video_thumb">
+                            <img src="img/latest_blog/video.png" alt="" height="250" width="650">
+                            <a class="popup-video" href="https://www.youtube.com/watch?v=uzM32wVTbsY">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div>
+                         <div class="feedback_info">
+                            <h3 style="font-family: verdana"><br>What is Automata to Computer Scientists?</h3>
+                           <!-- <i class="flaticon-mark-as-favorite-star"></i>
+                            <p>Your rating</p>
+                            <i class="flaticon-mark-as-favorite-star"></i>
+                            <i class="flaticon-mark-as-favorite-star"></i>
+                            <i class="flaticon-mark-as-favorite-star">D</i>
+                            <i class="flaticon-mark-as-favorite-star"></i>
+                            -->
+                        <form action="#">
+                                <textarea style="border:dashed 5px #bf42f5; background-image: linear-gradient(blue, violet);" name="" id="" cols="30" rows="10">"Through automata, computer scientists are able to understand how machines compute functions and solve problems and more importantly, what it means for a function to be defined as computable or for a question to be described as decidable."</textarea>
+                                <!--<button type="submit" class="boxed_btn">Submit</button>-->
+                            </form>
+                        </div><br><br><br><br>
+                        <div><h3>Interesting Videos about Automata</h3>
+                            <iframe src="https://www.youtube.com/embed/4rNYAvsSkwk"width="450" height="220" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/SzOgsaXO7BE"width="450" height="220" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- testimonial_area_start -->
+    <div class="testimonial_area testimonial_bg_1 overlay">
+        <div class="testmonial_active owl-carousel">
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    "Besides electrical engineering theory of the transmission of messages,<br>
+                                     there is a larger field [cybernetics] which includes not only the study of<br>
+                                     language but the study of messages as a means of controlling machinery<br>
+                                     and society, the development of computing machines and other such<br>
+                                     automata, certain reflections upon psychology and the nervous system,<br>
+                                     and a tentative new theory of scientific method."
+                                </p>
+                                <span> -Norbert Wiener<br>
+                                    <i>In Cybernetics (1948).</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    "Charles Babbage proposed to make an automaton chess-player which <br>
+                                    should register mechanically the number of games lost and gained in<br>
+                                     consequence of every sort of move. Thus, the longer the automaton<br>
+                                    went on playing game, the more experienced it would become by the<br>
+                                    accumulation of experimental results. Such a machine precisely<br>
+                                    represents the acquirement of experience by our nervous organization."
+                                </p>
+                                <span> -William Stanley Jevons<br>
+                                     <i>In ‘Experimental Legislation’, Popular Science (Apr 1880)</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    In any conceivable method ever invented by man, an automaton which <br>
+                                    produces an object by copying a pattern, will go first from the <br>
+                                    pattern to a description to the object. It first abstracts what<br>
+                                     the thing is like, and then carries it out. It’s therefore simpler <br>
+                                     not to extract from a real object its definition, but to start <br>
+                                     from the definition.
+                                </p>
+                                <span> -John von Neumann<br>
+                                    <i>From lecture series on self-replicating machines at the University of Illinois, Lecture 5 (Dec 1949)</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    "Ninety-nine [students] out of a hundred are automata, careful to walk<br>
+                                     in prescribed paths, careful to follow the prescribed custom. This is <br>
+                                     not an accident but the result of substantial education, which, <br>
+                                     scientifically defined, is the subsumption of the individual."
+                                </p>
+                                <span> -William T Harris<br>
+                                    <i>As quoted in various 21st century books, each time cited only as from the The Philosophy of Education (1906)</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    "The primary aim, object, and purpose of consciousness is control. <br>
+                                    Consciousness in a mere automaton is a useless and unnecessary epiphenomenon."
+                                </p>
+                                <span> -Conwy Lloyd Morgan<br>
+                                    <i>An Introduction to Comparative Psychology (1894)</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    "We see, then, that the disappearance of the conscious personality,<br>
+                                    the predominance of the unconscious personality, the turning by means<br>
+                                    of suggestion and contagion of feelings and ideas in an identical direction, <br>
+                                    the tendency to immediately transform the suggested ideas into acts; these, <br>
+                                    we see, are the principal characteristics of the individual forming part of <br>
+                                    a crowd. He is no longer himself, but has become an automaton who has ceased <br>
+                                    to be guided by his will."
+                                </p>
+                                <span> -Gustave Le Bon<br>
+                                    <i>From Psychologie des Foules (1895), 20. English text in The Crowd: A Study of the Popular Mind (1897)</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial_area_end -->
+
+    <!-- our_courses_start -->
+    <div class="our_courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Our Project Speciality</h3>
+                        <p>You will learn the basics of Finite Automata in this website <br>
+                            in the easiest way to understand and learn possible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-art-and-design"></i>
+                        </div>
+                        <h3>Educational Quality</h3>
+                        <p>
+                            Easy to learn.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon blue">
+                            <i class="flaticon-business-and-finance"></i>
+                        </div>
+                        <h3>Free</h3>
+                        <p>
+                            You won't spend a penny.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-premium"></i>
+                        </div>
+                        <h3>User-Friendly</h3>
+                        <p>
+                            Easy to navigate and use.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon gradient">
+                            <i class="flaticon-crown"></i>
+                        </div>
+                        <h3>Aesthetic</h3>
+                        <p>
+                            Learn with beauty and style.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our_courses_end -->
+
+    <!-- footer -->
+    <footer class="footer footer_bg_1">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <p style="text-align:justify">
+                                If you are not willing to learn, no one can help you. 
+				If you are determined to learn, no one can stop you.
+				Come and learn from the best! Come and Learn Automata.
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/groups/automata/">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/hashtag/automata?lang=en">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/explore/tags/automata/?hl=en">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=fp0RKpQHBVw">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Automata
+                            </h3>
+                            <ul>
+                                <li><a href="introduction.html">Introduction</a></li>
+                                <li><a href="deterministic.html">Deterministic FA</a></li>
+                                <li><a href="non-deterministic.html">Non-Deterministic FA</a></li>
+								<li><a href="terminologies.html">Terminologies</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Resources
+                            </h3>
+                            <ul>
+                                <li><a href="https://www.tutorialspoint.com/automata_theory/automata_theory_quick_guide.htm">Automata Theory - Quick Guide</a></li>
+                                <li><a href="https://www.tutorialspoint.com/automata_theory/automata_theory_useful_resources.htm">Useful Resources</a></li>
+                                <li><a href="https://www.tutorialspoint.com/automata_theory/automata_theory_discussion.htm">Discussion</a></li>
+                                <li><a href="about.html"> About</a></li>
+                                <li><a href="contact.html"> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Address
+                            </h3>
+                            <p>
+                                General Luna, corner Muralla St, <br>
+								Intramuros, Manila, 1002 Metro Manila <br>
+                                +63 956 780 4974 <br>
+                                LearnAutomata2@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

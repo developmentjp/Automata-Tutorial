@@ -1,0 +1,305 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Learn Automata</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link rel="manifest" href="site.webmanifest"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/gijgo.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slicknav.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+     <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">home</a></li>
+                                        <li><a class="active" href="#">Automata <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="introduction.html">Introduction</a></li>
+                                                <li><a href="deterministic.html">Deterministic Finite Automaton</a></li>
+												<li><a href="non-deterministic.html">Non-Deterministic Finite Automaton</a></li>
+												<li><a href="terminologies.html">Terminologies</a></li>
+                                            </ul>
+                                        </li>
+					                       <li><a href="exercises.html">Examples</a></li>
+					                       <li><a href="about.html">About</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="log_chat_area d-flex align-items-center">
+                                <div class="live_chat_btn">
+                                    <a class="boxed_btn_orange" href="contact.html"> <!-- insert link???--->
+                                        <i class="ti-email"></i>
+                                        <span>LearnAutomata2@gmail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-  d-lg-none"></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+	
+		<!-- bradcam_area_start -->
+		<div class="bradcam_area breadcam_bg overlay2" style="background-image: linear-gradient(blue,violet);">
+				<h3>Deterministic Finite Automata</h3>
+			</div>
+			<!-- bradcam_area_end -->
+
+	<!-- Start Sample Area -->
+	<section class="sample-text-area" style="background-color: #f0f0f0;" >
+		<div class="container box_1170">
+			<h3 class="text-heading">Deterministic Finite Automata - DFA</h3>
+			<p class="sample-text" style="color:black; font-size: 20px;">
+				In DFA, for each input symbol, one can determine the state to which the machine will move. Hence, 
+				it is called <b>Deterministic Automaton</b>. As it has a finite number of states, the machine is called 
+				Deterministic Finite Machine or Deterministic Finite Automaton.</p>
+			<br>
+			<div class="section-top-border">
+			<div class="row" align="center">
+				<div class="col-md-6">
+					<div class="single-defination" align="left">
+						<h4 class="mb-20">Formal Definition of a DFA</h4>
+						<pre style="color:black; font-size: 18px; font-family:font-awesome;">A DFA can be represented by a 5-tuple (Q, ∑, δ, q0, F) where −
+  →Q is a finite set of states.
+  →∑ is a finite set of symbols called the alphabet.
+  →δ is the transition function where δ: Q × ∑ → Q
+  →q0 is the initial state from where any input is processed 
+   (q0 ∈ Q).
+  →F is a set of final state/states of Q (F ⊆ Q).
+						</pre>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="single-defination" align="left">
+						<h4 class="mb-20">Graphical Representation of a DFA</h4>
+						<pre style="color:black; font-size: 18px; font-family:font-awesome;">A DFA is represented by digraphs called state diagram.
+  →The vertices represent the states.
+  →The arcs labeled with an input alphabet show the transitions.
+  →The initial state is denoted by an empty single incoming arc.
+  →The final state is indicated by double circles.
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+			<p style="color:black; font-size: 25px">Example:</p>
+		    <p style="color:black; font-size: 20px"> Let a deterministic finite automaton be </p>
+				<ul style="color:black; font-size: 20px">	
+					<li>→Q = {a, b, c},</li>
+					<li>→∑ = {0, 1},</li>
+					<li>→q0 = {a},</li>
+					<li>→F = {c}, and</li>
+				</ul>
+				<br><p style="font-size: 20px; color:black">Transition function δ as shown by the following table:</p>
+				<center><img src="img/dfatable.png" alt="" class="img-fluid"></center>
+				<br>
+				<p style="font-size: 20px; color:black">Its graphical representation would be as follows:</p>
+				<center><img src="img/dfagraph.png" alt="" class="img-fluid"></center>
+			</p><br>
+            <center><a href='exercises.html' class="genric-btn primary-border circle">Click to Procede to Example</a></center>
+		</div>
+	</section>
+	<!-- End Sample Area -->
+
+	
+	<!-- End Align Area -->
+    <!-- footer -->
+    <footer class="footer footer_bg_1">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <p style="text-align:justify">
+                                If you are not willing to learn, no one can help you. 
+								If you are determined to learn, no one can stop you.
+								Come and learn from the best! Come and Learn Automata.
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/groups/automata/">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/hashtag/automata?lang=en">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/explore/tags/automata/?hl=en">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=fp0RKpQHBVw">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Automata
+                            </h3>
+                            <ul>
+                                <li><a href="introduction.html">Introduction</a></li>
+                                <li><a href="deterministic.html">Deterministic FA</a></li>
+                                <li><a href="non-deterministic.html">Non-Deterministic FA</a></li>
+								<li><a href="terminologies.html">Terminologies</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Resources
+                            </h3>
+                            <ul>
+                                <li><a href="https://www.tutorialspoint.com/automata_theory/automata_theory_quick_guide.htm">Automata Theory - Quick Guide</a></li>
+                                <li><a href="https://www.tutorialspoint.com/automata_theory/automata_theory_useful_resources.htm">Useful Resources</a></li>
+                                <li><a href="https://www.tutorialspoint.com/automata_theory/automata_theory_discussion.htm">Discussion</a></li>
+                                <li><a href="about.html"> About</a></li>
+                                <li><a href="contact.html"> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Address
+                            </h3>
+                            <p>
+                                General Luna, corner Muralla St, <br>
+								Intramuros, Manila, 1002 Metro Manila <br>
+                                +63 956 780 4974 <br>
+                                LearnAutomata2@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+		
+	<!-- JS here -->
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/ajax-form.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/scrollIt.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/nice-select.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/gijgo.min.js"></script>
+
+	<!--contact js-->
+	<script src="js/contact.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/mail-script.js"></script>
+
+	<script src="js/main.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            disableDaysOfWeek: [0, 0],
+        //     icons: {
+        //      rightIcon: '<span class="fa fa-caret-down"></span>'
+        //  }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+
+        });
+        var timepicker = $('#timepicker').timepicker({
+         format: 'HH.MM'
+     });
+    </script>
+</body>
+</html>
