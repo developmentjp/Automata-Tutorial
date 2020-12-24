@@ -4,11 +4,11 @@ permalink: /index.html
 ---
 ## Tutorial about Finite Automata and some of it Concepts.
 
-Including:
-  Deterministic Finite Automata(DFA)
-  Nondeterministic Finite Automata(NFA)
-  Key Terminologies
-  Exercises
+Including:<br/>
+  Deterministic Finite Automata(DFA)<br/>
+  Nondeterministic Finite Automata(NFA)<br/>
+  Key Terminologies<br/>
+  Exercises<br/>
   
 ---
 
