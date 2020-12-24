@@ -1,6 +1,6 @@
 # Finite-Automata
 ---
-###permalink: /index.html
+### permalink: /index.html
 ---
 ## Tutorial about Finite Automata and some of it Concepts.
 
